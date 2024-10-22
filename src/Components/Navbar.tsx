@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import images from "../Assets/Images";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false); // State for menu toggle
@@ -10,12 +11,11 @@ const Navbar = () => {
   };
   return (
     <section>
-      <section className="hidden md:flex flex-row justify-around items-center bg-[#2B2C41] text-white">
-        <img
-          src={images.logo}
-          alt="Description"
-          className="md:w-[10%] w-[20%]"
-        />
+      <section className="hidden md:flex flex-row justify-around items-center bg-[#2B2C41] text-white text-center p-2">
+        <Link to={"/"} className="md:w-[10%] w-[20%]">
+          <img src={images.logo} alt="Description" />
+        </Link>
+
         <div>
           <ul className="list-none flex flex-row justify-around gap-7 font-bold">
             <li>AI Solutions</li>
