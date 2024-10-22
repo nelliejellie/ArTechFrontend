@@ -22,11 +22,6 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  const { data, loading, error } = UseFetch<CardProps[]>(
-    "http://localhost:8000/projects"
-  );
-
-  if (loading) return <div>Loading...</div>;
   return (
     <Router>
       <Routes>

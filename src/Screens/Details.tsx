@@ -11,7 +11,7 @@ const Details = () => {
   );
 
   return (
-    <section className="bg-[#111229] h-[100%] text-white">
+    <section className="bg-[#111229] h-[100vh] text-white">
       <Navbar />
       <div className="relative w-full h-[700px] ">
         <img
