@@ -9,7 +9,7 @@ import Details from "../Screens/Details";
 
 function Home() {
   const { data, loading, error } = UseFetch<CardProps[]>(
-    "http://localhost:8000/projects"
+    "https://arctechfastapi-1.onrender.com/projects"
   );
 
   if (loading) return <div>Loading...</div>;

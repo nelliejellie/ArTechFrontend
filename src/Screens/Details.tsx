@@ -7,7 +7,7 @@ import Navbar from "../Components/Navbar";
 const Details = () => {
   const { id } = useParams();
   const { data, loading, error } = UseFetch<CardProps>(
-    `http://localhost:8000/get-project/${id}`
+    `https://arctechfastapi-1.onrender.com/get-project/${id}`
   );
 
   return (
